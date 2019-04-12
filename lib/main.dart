@@ -5,8 +5,6 @@ import 'package:flutter_testex_6/ThirdScreen.dart';
 import 'package:flutter_testex_6/FourthScreen.dart';
 import 'package:flutter_testex_6/Lesson.dart';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'DetailPage.dart';
 
 void main() => runApp(new MyApp());
@@ -127,7 +125,7 @@ class _ListPageState extends State<ListPage> {
               icon: Icon(Icons.add_to_home_screen, color: Colors.yellow),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FirstScreen()));
+                    MaterialPageRoute(builder: (context) => FireBaseTaskScreen()));
               },
             ),
             IconButton(
